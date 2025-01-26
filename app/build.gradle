@@ -1,0 +1,191 @@
+plugins {
+    id 'com.android.application'
+    id "androidx.navigation.safeargs"
+    id 'io.objectbox'
+
+
+}
+
+android {
+    namespace 'com.craftsilicon.weather'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.craftsilicon.weather"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.$versionCode"
+        archivesBaseName = "weather-forecast-$versionName"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+
+
+}
+
+dependencies {
+
+    implementation 'androidx.compose.ui:ui-graphics-android:1.7.6'
+    def dagger_version = "2.44.2"
+    def okhttp_version = "5.0.0-alpha.2"
+    def retrofit_version = "2.9.0"
+    def nav_version = "2.8.5"
+    def security = "1.1.0-alpha03"
+    def lottieVersion = "5.2.0"
+    def glide_version = "4.13.0"
+
+
+    // TESTING
+    // Standard Testing
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+
+    // JET PACK
+    // Preference
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.preference:preference:1.2.1'
+
+    //App compat
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+
+    // Constraint Layout
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+
+    // Lifecycle
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    // Navigation
+    implementation "androidx.navigation:navigation-fragment:$nav_version"
+    implementation "androidx.navigation:navigation-ui:$nav_version"
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
+    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+
+    // Material components
+    implementation 'com.google.android.material:material:1.12.0'
+
+    // Gson
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    // Dagger
+    implementation "com.google.dagger:dagger:$dagger_version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$dagger_version"
+
+    // SQUARE UP
+    // Retrofit & OkHttp
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+
+    // 3RD PARTY COMPONENTS
+    // Glide
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
+
+    //Fragment
+    implementation 'androidx.fragment:fragment:1.8.5'
+    implementation 'androidx.fragment:fragment-ktx:1.8.5'
+
+    //Lottie Animation
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+
+    // Security
+    //noinspection GradleDependency
+    implementation "androidx.security:security-crypto:$security"
+
+    //poi
+    implementation 'org.apache.poi:poi:4.0.0'
+    implementation 'org.apache.poi:poi-ooxml:4.0.0'
+
+    //GOOGLE PLAY
+    implementation 'com.google.android.gms:play-services-auth:21.3.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:18.1.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'androidx.viewpager2:viewpager2:1.1.0'
+
+    // Circle Indicator (To fix the xml preview "Missing classes" error)
+    implementation 'me.relex:circleindicator:2.1.6'
+
+    implementation 'org.imaginativeworld.whynotimagecarousel:whynotimagecarousel:2.1.0'
+
+    // Google Play Core dependencies
+    implementation 'com.google.android.play:asset-delivery:2.3.0'
+    implementation 'com.google.android.play:feature-delivery:2.1.0'
+    implementation 'com.google.android.play:review:2.0.2'
+    implementation 'com.google.android.play:app-update:2.1.0'
+    implementation 'com.google.android.play:core-common:2.0.4'
+
+
+    //country code picker
+    implementation 'com.hbb20:ccp:2.5.1'
+
+    implementation "androidx.biometric:biometric:1.1.0"
+    implementation 'androidx.biometric:biometric:1.2.0-alpha05'
+
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.3@aar'
+
+    implementation 'com.google.android.libraries.places:places:2.6.0'
+
+    implementation 'com.airbnb.android:lottie:6.5.2'
+    implementation 'com.github.bkhezry:MaterialSearchView:1.6.0'
+    implementation 'com.github.bkhezry:prefser:v2.2.1-rx2'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.11.0'
+
+    implementation 'com.mikepenz:fastadapter:3.3.1'
+
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+
+    // RxJava
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    implementation 'io.objectbox:objectbox-android:3.7.1'
+    annotationProcessor 'io.objectbox:objectbox-processor:3.7.1'  // Required for code generation
+
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+
+    constraints {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0") {
+            because("kotlin-stdlib-jdk7 is now a part of kotlin-stdlib")
+        }
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0") {
+            because("kotlin-stdlib-jdk8 is now a part of kotlin-stdlib")
+        }
+    }
+
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+
+

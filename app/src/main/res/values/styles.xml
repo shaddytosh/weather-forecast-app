@@ -1,0 +1,96 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="TextViewInColoredCard">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="SubTextViewInColoredCard">
+        <item name="android:textColor">@color/grey_10</item>
+    </style>
+
+    <style name="IconInColoredCard">
+        <item name="android:tint">@android:color/white</item>
+    </style>
+
+    <style name="TempTextView">
+        <item name="android:textSize">70sp</item>
+        <item name="android:textColor">@color/grey_10</item>
+    </style>
+
+    <style name="DescriptionTextView">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/grey_10</item>
+    </style>
+
+    <style name="HumidityTextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/grey_10</item>
+    </style>
+
+    <style name="WindSpeedTextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/grey_10</item>
+    </style>
+
+    <style name="MaterialSearchViewStyle">
+        <!-- Background for the search bar -->
+        <item name="searchBackground">?attr/colorPrimary</item>
+
+        <!-- Change text color for edit text. This will also be the color of the cursor -->
+        <item name="android:textColor">@android:color/black</item>
+
+        <!-- Change hint text color for edit text -->
+        <item name="android:textColorHint">@android:color/black</item>
+
+        <item name="android:iconTint">@android:color/white</item>
+
+
+    </style>
+
+
+    <style name="TransitionTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/scrim</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="AppTheme" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Force dark mode to be off -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+        <!-- Set status bar color -->
+        <item name="android:statusBarColor">@color/material_blue</item>
+        <!-- Set light content for the status bar (light icons) -->
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Allow content transitions -->
+        <item name="android:windowContentTransitions">true</item>
+
+        <!-- Set colorPrimary for the app -->
+        <item name="colorPrimary">@color/material_blue</item>
+        <!-- Set colorPrimaryDark for the status bar -->
+        <item name="colorPrimaryDark">@color/material_blue</item>
+        <!-- Set accent color -->
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Allow transition overlaps -->
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+
+        <!-- Make shared elements use overlay -->
+        <item name="android:windowSharedElementsUseOverlay">true</item>
+
+        <!-- Set background color of the window to white -->
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+
+    <style name="CustomBottomSheetDialog">
+        <!-- Define your style properties here -->
+    </style>
+</resources>

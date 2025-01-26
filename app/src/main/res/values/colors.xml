@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#6452f0</color>
+    <!-- Red -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Default item color -->
+
+
+    <color name="colorAccent">#D81B60</color>
+    <color name="material_blue">#6452f0</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="colorPrimaryNight">#263238</color>
+    <color name="colorPrimaryDarkNight">#141d26</color>
+    <color name="scrim">#99323232</color>
+
+</resources>

@@ -1,0 +1,32 @@
+<resources>
+
+    <attr name="gradientShade1" format="color" />
+    <attr name="gradientShade2" format="color" />
+
+    <declare-styleable name="Theme.KRC">
+        <attr name="textGradient" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="GradientTextView">
+        <attr name="gradientShade1" />
+        <attr name="gradientShade2" />
+    </declare-styleable>
+
+    <declare-styleable name="OtpComponent">
+        <attr name="length" format="integer"/>
+        <attr name="otp" format="string"/>
+        <attr name="android:textSize"/>
+    </declare-styleable>
+
+    <declare-styleable name="ButtonStyleable">
+        <attr name="isDarkTheme" format="boolean" />
+        <attr name="android:text" />
+    </declare-styleable>
+
+    <declare-styleable name="MemberInfoRow">
+        <attr name="labelText" format="string" />
+        <attr name="valueText" format="string" />
+        <attr name="valueTextStyle" format="reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Weather Forecast</string>
+    <string name="search_location">Search Location</string>
+    <string name="current_label">Current</string>
+    <string name="humidity_label">Humidity</string>
+    <string name="wind_label">Wind</string>
+    <string name="search_for_a_city_label">Search for a city</string>
+    <string name="zero_label">0%d</string>
+    <string name="wind_unit_label">%.0f km/hr</string>
+    <string name="search_label">Search here</string>
+    <string name="no_internet_message">Please check internet connection</string>
+    <string name="no_city_found_message">No city found with this name</string>
+    <string name="invalid_api_key_message">API key is invalid. Wait for next update</string>
+    <string name="retry_label">Retry</string>
+    <string name="ok_label">OK</string>
+    <string name="open_weather_map_api">YOUR_API_KEY_HERE</string>
+    <string name="next_5_days">Next 5 Days</string>
+</resources>

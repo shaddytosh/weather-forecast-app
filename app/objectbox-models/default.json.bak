@@ -1,0 +1,52 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:6166056264637000459",
+      "lastPropertyId": "5:1792499664287153535",
+      "name": "ItemHourlyDB",
+      "properties": [
+        {
+          "id": "1:5761364353795724783",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:4957973879477824001",
+          "name": "fiveDayWeatherId",
+          "type": 6
+        },
+        {
+          "id": "3:9149631266183666225",
+          "name": "dt",
+          "type": 5
+        },
+        {
+          "id": "4:7863476127572977698",
+          "name": "temp",
+          "type": 8
+        },
+        {
+          "id": "5:1792499664287153535",
+          "name": "weatherCode",
+          "type": 5
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "1:6166056264637000459",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
